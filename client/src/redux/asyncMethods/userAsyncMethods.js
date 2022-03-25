@@ -3,7 +3,7 @@ import axios from 'axios'
 export const register = (state) => {
     return async (dispatch) => {
         try {
-            const response = await axios.post('http://localhost:80/register', state)
+            const response = await axios.post('/register', state)
             // console.log(response.data.msg);
             dispatch({ type: 'CLOSE_LOADING' })
             dispatch({ type: 'SET_MSG', payload: response.data.msg })
@@ -26,7 +26,7 @@ export const register = (state) => {
 export const login = (state) => {
     return async (dispatch) => {
         try {
-            const response = await axios.post('http://localhost:80/login', state)
+            const response = await axios.post('/login', state)
             // console.log(response);
             dispatch({ type: 'CLOSE_LOADING' })
             dispatch({ type: 'SET_MSG', payload: response.data.msg })
@@ -36,7 +36,7 @@ export const login = (state) => {
             }, 1000);
         } catch (error) {
             dispatch({ type: 'CLOSE_LOADING' })
-            console.log(error.response.data);
+            console.log(error.response);
             error.response.data.error.map(err => {
                 return dispatch({ type: 'SET_MSG', payload: err.msg })
 
