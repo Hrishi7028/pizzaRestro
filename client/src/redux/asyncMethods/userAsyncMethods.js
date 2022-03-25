@@ -27,7 +27,7 @@ export const login = (state) => {
     return async (dispatch) => {
         try {
             const response = await axios.post('http://localhost:80/login', state)
-            console.log(response);
+            // console.log(response);
             dispatch({ type: 'CLOSE_LOADING' })
             dispatch({ type: 'SET_MSG', payload: response.data.msg })
             setTimeout(() => {
@@ -52,7 +52,7 @@ export const sendLinkToEmail = (email) => {
         dispatch({ type: "SET_LOADING" })
         try {
             const response = await axios.post('/forget', { email })
-            console.log(response.data.msg);
+            // console.log(response.data.msg);
             response.data.msg.map((smsg) => {
                 return dispatch({ type: 'SET_MSG', payload: smsg.msg })
             })
@@ -75,7 +75,7 @@ export const changePassword = (password, token, id) => {
         dispatch({ type: "SET_LOADING" })
         try {
             const response = await axios.post(`/reset-password/change-new/${id}/${token}`, { password })
-            console.log(response.data.msg);
+            // console.log(response.data.msg);
             response.data.msg.map((smsg) => {
                 return dispatch({ type: 'SET_MSG', payload: smsg.msg })
             })
