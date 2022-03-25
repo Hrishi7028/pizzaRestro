@@ -40,7 +40,7 @@ export const getPizzaById = (id) => {
         dispatch({ type: 'SET_LOADING' })
         const { userReducer: { token } } = getState();
         try {
-            const response = await axios.get(`/get_single_pizza/${id}`, {
+            await axios.get(`/get_single_pizza/${id}`, {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }

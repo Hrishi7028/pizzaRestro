@@ -3,6 +3,7 @@ import { Form, Button, FloatingLabel } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import { register } from '../redux/asyncMethods/userAsyncMethods'
 import { toast } from 'wc-toast';
+import { Link } from "react-router-dom";
 
 
 const Register = () => {
@@ -40,11 +41,19 @@ const Register = () => {
         e.preventDefault();
         dispatch({ type: 'SET_LOADING' })
         if (state.password !== state.cpassword) {
-            alert('password does not matched...')
+            toast.error('password does not matched...');
             return;
         }
-        console.log(state);
         dispatch(register(state))
+        setState({
+            Fname: '',
+            Lname: '',
+            email: '',
+            mobile: '',
+            password: '',
+            cpassword: '',
+            address: ''
+        })
 
     }
 
@@ -120,15 +129,23 @@ const Register = () => {
                     </Form.Group>
                     <FloatingLabel controlId="floatingTextarea" label="Enter Full Address" className="mb-3">
                         <Form.Control
-                         as="textarea" 
-                         onChange={handelForm}
-                         value={state.address}
-                         name='address'
-                         maxLength={200}
-                         />
+                            as="textarea"
+                            onChange={handelForm}
+                            value={state.address}
+                            name='address'
+                            maxLength={200}
+                        />
                     </FloatingLabel>
                     <Button type='submit' onClick={formSubmit}>{!loading ? 'Register' : 'loading...'}</Button>
                 </Form>
+                <div className="footer mt-3">
+                    <div className="forgetPassword_section">
+                        <Link to='/login' className='signup_link'>Already have an account ?</Link>
+                    </div>
+                    <div className='login_footer_text'>
+                        <p>By continuing, you agree to PizzaRestro Conditions of Use and Privacy Notice.</p>
+                    </div>
+                </div>
             </div>
         </div>
     )

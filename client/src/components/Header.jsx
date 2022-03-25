@@ -6,7 +6,6 @@ import { FiLogOut } from 'react-icons/fi'
 import { AiOutlineUserAdd } from 'react-icons/ai'
 import { AiOutlineUsergroupAdd } from 'react-icons/ai'
 import { RiAdminLine } from 'react-icons/ri'
-// import MdOutlinePedalBike from 'react-icons/lib/fa/MdOutlinePedalBike'
 import { GiDutchBike } from 'react-icons/gi'
 import { GiFullPizza } from 'react-icons/gi'
 import { useDispatch, useSelector } from 'react-redux'
@@ -60,7 +59,7 @@ const Header = () => {
     const AdminLinks = user.isAdmin === 'admin' ?
         <>
 
-            <NavDropdown title="Admin" className='Admin_panel' id="basic-nav-dropdown" style={{ color: 'black', marginRight: '5px' ,textAlign:'center'}}>
+            <NavDropdown title="Admin" className='Admin_panel' id="basic-nav-dropdown" style={{ color: 'black', marginRight: '5px', textAlign: 'center' }}>
 
                 <LinkContainer to="/alluser" className='navBorder'>
                     <Nav.Link className='activeClass text-center'>
@@ -93,9 +92,9 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto Admin_panel" style={{ color: 'white', fontSize: '20px' }} >
-                        <Filter 
-                            className='mx-auto'
-                        />
+                            <Filter
+                                className='mx-auto'
+                            />
                             {AdminLinks}
                             {links}
                         </Nav>
