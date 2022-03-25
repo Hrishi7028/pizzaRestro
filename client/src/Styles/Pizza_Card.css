@@ -1,0 +1,92 @@
+.pizzaSelection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.card_img {
+  height: 300px;
+}
+
+.pizza_SelectBox {
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 1px;
+  text-align: center;
+  border: 2px solid #727272;
+  cursor: pointer;
+}
+
+.pizzaSelection > .prize {
+  background-color: rgb(226, 223, 223);
+  width: 22%;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+
+}
+
+.pizzaQuantity {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  padding: 5px;
+  align-items: center;
+}
+
+.pizza_Quantity_selection_Container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border: 2px solid rgb(179, 179, 179);
+  border-radius: 5px;
+}
+
+.pizza_Quantity_selection {
+  text-align: center;
+  display: inline-block;
+  padding: 5px;
+}
+
+.inc {
+  width: 100%;
+}
+.btn {
+  width: 100%;
+}
+.num {
+  width: 70%;
+}
+.dec {
+  width: 100%;
+}
+
+Button > .btn:focus {
+  outline: none !important;
+  outline-offset: none !important;
+}
+
+
+@media screen and (max-width: 575px) {
+  .card_img {
+    height: 276px;
+  }
+}
+@media screen and (min-width:576px) and  (max-width: 992px) {
+  .card_img {
+    height: 197px;
+  }
+  .pizzaSelection > .prize {
+    width: auto!important;
+  }
+}
+@media screen and (max-width:427px){
+  /* .card_img {
+    height: 197px;
+  } */
+  .pizzaSelection > .prize {
+    width: auto!important;
+  }
+}

@@ -1,0 +1,14 @@
+
+.admin_user_box {
+    display: inline-block;
+margin: auto;
+width: 100%;
+margin-top: 10px;
+background-color: white;
+padding: 4px;}
+
+.admin_user_box > select {
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}

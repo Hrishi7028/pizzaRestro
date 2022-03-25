@@ -1,0 +1,11 @@
+
+
+@media screen and (max-width: 780px) {
+    .heading > .cutome_btn {
+        width: 100% !important;
+    }
+    .heading > h2 {
+        text-align: center;
+        width: 100%;
+    }
+  }

@@ -1,0 +1,14 @@
+.Payment_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tableColum {
+    /* display: flex; */
+    text-align: center !important;
+    vertical-align: center !important;
+
+}
+/* style={{ display: 'flex' ,justifyContent:'center',alignItems:'center',height:'100%',marginTop:'1rem'}} */
+/* style={{ textAlign: 'center', verticalAlign: 'middle' }} */

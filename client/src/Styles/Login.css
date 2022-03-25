@@ -1,0 +1,34 @@
+.forgetPassword_section {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin-top: 6px;
+  border-radius: 6px;
+}
+
+.footer {
+  background-color: #efefef;
+  height: 4rem;
+  text-align: center;
+}
+
+.Forgetpassword_link {
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.signup_link {
+  text-decoration: none;
+}
+
+.login_footer_text > p {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+
+@media screen and (max-width: 750px) {
+  .w-50{
+    width: 95%!important;
+  }
+}

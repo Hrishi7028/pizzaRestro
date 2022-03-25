@@ -1,0 +1,20 @@
+.pizzaAction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.pizzaAction > span {
+    padding: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.editSpan > svg {
+    color: green !important;
+}
+
+.deleteSpan > svg {
+    color: red !important;
+}

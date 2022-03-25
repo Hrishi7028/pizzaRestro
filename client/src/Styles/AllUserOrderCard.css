@@ -1,0 +1,118 @@
+.RowLinkContainer {
+  cursor: pointer;
+  display: table-row !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid #dee2e6 !important;
+  color: black !important;
+}
+
+.linkCol {
+  border-color: #dee2e6;
+}
+
+/* single order details */
+.order_details {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.custome_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail_info {
+  margin-left: 3rem;
+  margin-right: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.PizzaContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.address_container {
+  font-weight: bold;
+}
+
+.User_name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: bold;
+}
+
+.order_select_box {
+  padding: 7px;
+  background-color: white;
+}
+
+.custome_card {
+  width: 18rem;;
+}
+
+.order_select_box > select {
+  border-radius: 5px;
+  outline: none;
+  text-align: center;
+  padding: 3px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* media query */
+
+@media screen and (max-width: 950px) {
+  .user_details {
+    font-size: 12px;
+    margin-right: 9px;
+  }
+
+  .address_container {
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .custome_card {
+    width: 15rem;;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .order_select_box {
+    padding: 2px !important;
+    background-color: white;
+    margin-top: 12px;
+  }
+
+  .order_select_box > select {
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+    padding: 1px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  
+  .custome_header {
+    flex-wrap: wrap !important;
+  }
+  .order_details {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .detail_info {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+

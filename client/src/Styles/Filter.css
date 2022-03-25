@@ -1,0 +1,40 @@
+.inputClass {
+  padding-left: 9px;
+  outline: none;
+  border-radius: 6px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.search_btn {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  /* border: white!important;; */
+}
+
+.search_form {
+  display: flex;
+}
+
+@media screen and (max-width: 991px) {
+  .search_form {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center!important;
+    align-items: center!important;
+  }
+  .search_btn {
+    width: auto!important;
+  }
+}
+
+@media screen and (max-width: 363px) {
+ 
+  .search_btn {
+   margin-top: 10px;
+   width: 70% !important;
+  }
+}
