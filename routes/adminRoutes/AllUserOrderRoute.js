@@ -4,7 +4,7 @@ const { getAllUserOrders, getSingleUserOrderDetail, updateOrderStatus } = requir
 
 
 
-router.get('/admin/allUserOrders', getAllUserOrders)
+router.get('/api/admin/allUserOrders', getAllUserOrders)
 
 router.get('/single_prod/:id', getSingleUserOrderDetail)
 

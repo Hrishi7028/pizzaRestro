@@ -4,10 +4,10 @@ export const getALLUserOrders = () => {
     return async (dispatch) => {
         dispatch({ type: 'SET_LOADING' })
         try {
-            const response = await axios.get('/admin/allUserOrders')
+            const response = await axios.get('/api/admin/allUserOrders')
             // console.log(response);
-            dispatch({ type: 'ALL_USER_ORDER', payload: response.data.allOrders })
             dispatch({ type: 'CLOSE_LOADING' })
+            dispatch({ type: 'ALL_USER_ORDER', payload: response.data.allOrders })
 
         } catch (error) {
             console.log(error.response);

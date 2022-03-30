@@ -32,7 +32,7 @@ function App() {
             <AdminRoutes exact path="/alluser" component={AllUsers} />
             <AdminRoutes exact path="/admin/edit_pizza" component={EditPizza} />
             <AdminRoutes exact path="/admin/new_pizza" component={New_pizza} />
-            <AdminRoutes exact path="/admin/allUserOrders" component={AllUserOrders} />
+            <AdminRoutes exact path="/api/admin/allUserOrders" component={AllUserOrders} />
             <AdminRoutes exact path="/allpizza" component={AllPizza} />
             <AdminRoutes exact path="/single_prod/:id" component={SingleOrderDetails} />
             <PrivateRoutes exact path="/cart" component={CartScreen} />

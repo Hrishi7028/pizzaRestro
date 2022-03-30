@@ -72,7 +72,7 @@ const Header = () => {
                         All Pizzas
                     </Nav.Link>
                 </LinkContainer>
-                <LinkContainer to="/admin/allUserOrders" className='navBorder'>
+                <LinkContainer to="/api/admin/allUserOrders" className='navBorder'>
                     <Nav.Link className='activeClass text-center'>
                         <span className='admin_icon'><GiDutchBike /></span>
                         Orders
